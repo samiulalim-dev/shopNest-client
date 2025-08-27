@@ -107,6 +107,25 @@ export default function Navbar() {
           >
             Products
           </Link>
+          <div className="relative">
+            <button
+              onClick={() => setDashboardOpen(!dashboardOpen)}
+              className="cursor-pointer flex items-center text-black hover:text-[#FF324D] font-medium"
+            >
+              Dashboard <MdArrowDropDown size={18} className="ml-1" />
+            </button>
+
+            {dashboardOpen && (
+              <div className="absolute mt-4 w-48 bg-white shadow-lg rounded-lg border border-gray-200">
+                <Link
+                  href="/dashboard/add-product"
+                  className="block px-4 py-2 text-black hover:bg-[#ff6900]/10 hover:text-[#FF324D]"
+                >
+                  Add Product
+                </Link>
+              </div>
+            )}
+          </div>
 
           <div>
             {status === "authenticated" ? (

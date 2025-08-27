@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Next Shop",
+  title: "Shop Nest",
   description: "Create by Next.js",
 };
 
