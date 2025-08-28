@@ -4,12 +4,6 @@ A modern, full-stack e-commerce website built with **Next.js**, **MongoDB**, **N
 
 ---
 
-## Features
-
-### User Feature# ShopNest - E-commerce Web Application
-
-A modern, full-stack e-commerce website built with **Next.js**, **MongoDB**, **NextAuth.js**, and **Tailwind CSS**. ShopNest allows users to browse products, view details, and manage products (if authenticated) with a smooth and responsive interface.
-
 ## **Live Demo:** [https://next-shop-client-alpha.vercel.app](https://next-shop-client-alpha.vercel.app)
 
 ## Features
