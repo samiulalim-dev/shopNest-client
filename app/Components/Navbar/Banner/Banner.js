@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -39,10 +40,13 @@ export default function BannerSlider() {
               <span className="text-md font-semibold text-[#FF324D]">
                 {slide.price ? ` $ ${slide.price}` : ""}
               </span>
-              <p className=" text-sm md:text-lg mt-2">{slide.subtitle}</p>
-              <button className="mt-4 px-2 text-sm sm:text-lg md:px-6 py-2 bg-[#FF324D] text-white rounded-full hover:bg-[#e0223f] transition">
-                Shop Now
-              </button>
+              <p className=" text-sm mb-4 md:text-lg mt-2">{slide.subtitle}</p>
+              <Link
+                href="/products"
+                className=" px-2 text-sm sm:text-lg md:px-6 py-2 bg-[#FF324D] text-white rounded-full hover:bg-[#e0223f] transition"
+              >
+                Explore Now
+              </Link>
             </div>
             <div>
               <img src={slide.src} alt={`Banner ${i + 1}`} className="" />
